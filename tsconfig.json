@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+      "baseUrl": ".", // This will point to the project root, needed for path alias to work
+      "paths": {
+          "@/*": ["./src/*"] 
+       }
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

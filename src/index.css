@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+The BASE layer is for things like reset rules or default styles
+applied to plain HTML elements.
+The COMPONENTS layer is for class-based styles that you want to
+be able to override with utilities. Like for card, btn, badge.
+The UTILITIES layer is for small, single-purpose classes that
+should always take precedence over any other styles.
+*/
+
+@layer base {
+  h1 { @apply text-3xl md:text-5xl font-bold }
+  h2 { @apply text-2xl md:text-3xl font-semibold }
+  input, select { @apply h-9 md:h-10 text-black }
+}
